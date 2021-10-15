@@ -5,9 +5,11 @@ NIXPORT ?= 22
 # Settings
 NIXBLOCKDEVICE ?= sda
 
+default:
+	echo "Read the README"
+
 nixos.iso:
 	./build.sh
-
 
 # NOTE: The ONLY difference between vm/bootstrap-broken and vm/bootstrap-good
 # is the line with "kernelPackages" set that sets 5.14 vs. default (5.10)
@@ -64,4 +66,4 @@ vm/bootstrap-good:
 clean:
 	rm nixos.iso
 
-.PHONY: clean
+.PHONY: clean default vm/bootstrap-broken vm/bootstrap-good
