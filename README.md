@@ -27,8 +27,8 @@ on an Intel machine there is _no bug_.
 2. Create a VM in Fusion (manually). Settings I used:
 
   * From `nixos.iso`
-  * 4 CPUs, 8192 RAM
-  * 150 GB disk, SATA **important: switch NVMe to SATA!**
+  * 4 CPUs, 8192 RAM.
+  * 150 GB disk, SATA **important: switch NVMe to SATA! The Makefile assumes SATA device paths.**
   * Full resolution display
 
 3. Boot it up. You'll log in automatically as the `nixos` user. Go to
