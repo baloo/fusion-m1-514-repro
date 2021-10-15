@@ -8,6 +8,9 @@ on Intel.
 
 ## Steps to Reproduce
 
+**All of these steps must be run on an M1 Mac computer.** If you run it
+on an Intel machine there is _no bug_.
+
 1. `make nixos.iso` - This will create the NixOS ISO. If you want to
   recreate the ISO you must delete the old one. This will place the ISO
   in the current directory as `nixos.iso`.
