@@ -6,6 +6,15 @@ it past what looks like the EFI screen _perhaps_). This only happens on
 Fusion Public Tech Preview on Apple M1, and does NOT happen on Fusion 12
 on Intel.
 
+This matters because `open-vm-tools` requires at least kernel 5.14 for
+GUI support and that matters for my use case.
+
+## Requirements
+
+* Apple computer with an Apple M1 chip
+* [VMware Fusion for Apple Silicon Public Tech Preview](https://blogs.vmware.com/teamfusion/2021/09/fusion-for-m1-public-tech-preview-now-available.html)
+* Docker Desktop to build the NixOS aarch64 ISO
+
 ## Steps to Reproduce
 
 **All of these steps must be run on an M1 Mac computer.** If you run it
