@@ -24,9 +24,11 @@ on an Intel machine there is _no bug_.
 
 3. Boot it up. You'll log in automatically as the `nixos` user. Go to
   the root user and set the password to "root":
-
-    $ sudo su
-    $ passwd
+  
+```
+$ sudo su
+$ passwd
+```
 
 4. Get the IP address, should be `192.168.something` from `ifconfig`.
 
