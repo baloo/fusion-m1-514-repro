@@ -34,6 +34,13 @@ vm/bootstrap-broken:
 			services.openssh.passwordAuthentication = true;\n \
 			services.openssh.permitRootLogin = \"yes\";\n \
 			users.users.root.initialPassword = \"root\";\n \
+			boot.kernelPatches = [ {\n \
+				name = \"efi-initrd\"; \n \
+				patch = null; \n \
+				extraConfig = '' \n \
+					EFI_GENERIC_STUB_INITRD_CMDLINE_LOADER y \n \
+				'';\n \
+			} ];\n \
 		' /mnt/etc/nixos/configuration.nix; \
 		nixos-install --no-root-passwd; \
 		reboot; \
